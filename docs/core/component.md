@@ -121,6 +121,10 @@ AFRAME.registerComponent('bar', {
     color: {default: '#FFF'},
     size: {type: 'int', default: 5}
   }
+  // now you can use these properties through this.data.<property> e.g. in the init function: 
+  init: function() {
+    console.log("initializing a bar with color", this.data.color)
+  }
 }
 ```
 
